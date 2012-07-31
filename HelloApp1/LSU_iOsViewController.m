@@ -13,6 +13,8 @@
 @end
 
 @implementation LSU_iOsViewController
+@synthesize helloTextField;
+@synthesize helloLabel;
 
 - (void)viewDidLoad
 {
@@ -22,6 +24,8 @@
 
 - (void)viewDidUnload
 {
+    [self setHelloLabel:nil];
+    [self setHelloTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -35,4 +39,6 @@
     }
 }
 
+- (IBAction)helloButtonPressed:(UIButton *)sender {
+}
 @end

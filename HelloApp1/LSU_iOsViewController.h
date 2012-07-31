@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LSU_iOsViewController : UIViewController
+- (IBAction)helloButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *helloTextField;
+@property (weak, nonatomic) IBOutlet UILabel *helloLabel;
 
 @end
